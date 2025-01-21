@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NearByCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFa-sb-mHM">
+                                <rect key="frame" x="0.0" y="80.666666666666686" width="393" height="737.33333333333326"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qz7-cp-80W">
+                                        <rect key="frame" x="20.666666666666657" y="448.33333333333326" width="372.33333333333337" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="7xr-T1-I0J"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JQH-xu-uQD">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="qz7-cp-80W" secondAttribute="bottom" constant="89" id="pNx-TK-KYW"/>
+                                    <constraint firstItem="qz7-cp-80W" firstAttribute="leading" secondItem="kFa-sb-mHM" secondAttribute="leading" constant="20.5" id="rne-RD-yjT"/>
+                                    <constraint firstAttribute="trailing" secondItem="qz7-cp-80W" secondAttribute="trailing" id="upP-aU-8bC"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kgl-gG-mU4">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="80.666666666666671"/>
+                                <color key="backgroundColor" red="0.72156862745098038" green="0.20000000000000001" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80.5" id="GIH-rB-PC3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nearby Coffee Shops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKb-XL-kJz">
+                                <rect key="frame" x="20" y="46" width="165" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="jaY-il-wEh"/>
+                                    <constraint firstAttribute="width" constant="165" id="qvq-N0-Y3e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PKb-XL-kJz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="46" id="0u9-6G-tTE"/>
+                            <constraint firstItem="Kgl-gG-mU4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3zL-B7-BZz"/>
+                            <constraint firstItem="Kgl-gG-mU4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5jl-9j-qg7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kFa-sb-mHM" secondAttribute="bottom" id="99m-Jp-ZSI"/>
+                            <constraint firstItem="kFa-sb-mHM" firstAttribute="top" secondItem="Kgl-gG-mU4" secondAttribute="bottom" id="GwZ-Ru-2gG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kgl-gG-mU4" secondAttribute="trailing" id="Pkg-dF-1iw"/>
+                            <constraint firstItem="PKb-XL-kJz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gqK-n8-R7g"/>
+                            <constraint firstItem="kFa-sb-mHM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qfy-VN-yzC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kFa-sb-mHM" secondAttribute="trailing" id="v1V-Fy-mFu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="kFa-sb-mHM" id="pOu-rr-lKK"/>
+                        <outlet property="nearBylabel" destination="PKb-XL-kJz" id="6vK-mn-x0J"/>
+                        <outlet property="storeCell" destination="qz7-cp-80W" id="WNY-YN-Wfu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

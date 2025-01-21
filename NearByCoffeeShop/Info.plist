@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                    <key>UISceneStoryboardFile</key>
+                    <string>Main</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+    <key>UIAppFonts</key>
+    <array>
+        <string>Circe-Light.otf</string>
+        <string>Circe-Bold.otf</string>
+        <string>Circe-Light.otf</string>
+        <string>Inter-Regular.ttf</string>
+        <string>Poppins-SemiBold.ttf</string>
+        <string>Circe Regular.ttf</string>
+        <string>Poppins-Regular.ttf</string>
+    </array>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <!-- Allow insecure HTTP requests -->
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        
+        <!-- Optional: Specific exceptions for domains -->
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>example.com</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>
